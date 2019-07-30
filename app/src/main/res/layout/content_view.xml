@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:id="@+id/cv_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/ll_namanya"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_gambarnya"
+            android:src="@drawable/user"
+            android:layout_width="100dp"
+            android:layout_height="110dp" />
+
+        <LinearLayout
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/ll_detail"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textSize="20dp"
+                android:text="Nama"
+                android:id="@+id/tv_nama"
+                android:padding="3dp"
+                android:layout_marginBottom="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="20sp"
+                android:text="No Hp"
+                android:id="@+id/tv_no_hp"
+                android:padding="3dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/iv_telepon"
+            android:src="@drawable/telephone"
+            android:layout_width="80dp"
+            android:layout_height="80dp" />
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
